@@ -1,0 +1,8 @@
+th{
+  background-color: #cccccc;
+}
+
+td, th{
+  width: 100px;
+  text-align: center;
+}
