@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="./sample3.css">
+  <title>繰り返し処理を知る3</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <h1>繰り返し処理を知る3</h1>
+  <h3>単価×個数の一覧表</h3>
+  <table border="2">
+    <tr>
+      <th>個数</th>
+      <th>商品A</th>
+      <th>商品B</th>
+      <th>商品C</th>
+    </tr>
+    <script type="text/javascript">
+    let tanka = new Array(3);
+    tanka[0] = 300;
+    tanka[1] = 450;
+    tanka[2] = 520;
+      for (i = 1; i <= 10; i++) {
+        document.write("<tr><th>" + i + "</th>");
+        for (j = 0; j <= 2; j++) {
+          document.write("<td>" + tanka[j] * i + "円" +"</td>");
+        }
+        document.write("</tr>");
+      }
+    </script>
+  </table>
+
+</body>
+
+</html>
