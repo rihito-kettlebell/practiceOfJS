@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="./sample.css">
+  <title>2または3で割り切れない数値</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <h1>2または3で割り切れない数値</h1>
+  <h3>サンプル</h3>
+  1~100の間で、2または3で割り切れない数値は以下のとおりです。<br>
+  <hr>
+  <script type="text/javascript">
+  let count =1;
+  for(i=1;i<=100;i++){
+    if(i%2==0||i%3==0){
+      continue;
+    }
+    //count 10ごとに改行
+    if(count%10==0){
+      document.write(i + " <br>");
+      console.log(count);
+      count++;
+    }else{
+      document.write(i + " ");
+      console.log(count);
+      count++;
+    }
+  }
+  </script>
+  <hr>
+  </body>
+
+</html>
