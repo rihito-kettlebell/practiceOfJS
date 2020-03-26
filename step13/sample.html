@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="./sample.css">
+  <title>戻り値の利用</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+  function waribiki(s){
+    let x = s * 0.8;
+    return x;
+  }
+  </script>
+</head>
+
+<body>
+  <h3>割引価格の計算</h3>
+    定価1500円の商品の2割引後の価格は
+    <script type="text/javascript">
+    let a = waribiki(1500);
+    document.write("<b>" + a + "円</b>です。");
+    </script>
+  <script type="text/javascript" src="./sample.js"></script>
+</body>
+
+</html>

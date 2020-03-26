@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="./sample2.css">
+  <title>戻り値の利用</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+  function koyakusu(a, b) {
+    let small, ax, bx;
+    if(a >= b){
+      small = b;
+    }else{
+      small = a;
+    }
+    for(i = small; i>=1; i--){
+      ax = a % i;
+      console.log(ax);
+      bx = b % i;
+      console.log(bx);
+      if(ax == 0 && bx == 0){
+        return i;
+      }
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <h3>最大公約数の計算</h3>
+    <script type="text/javascript">
+    let k = new Array(3);
+    k[0] = koyakusu(18, 12);
+    document.write("18と12の最大公約数は"+ k[0] + "です。<br><br>");
+    k[1] = koyakusu(12, 20);
+    document.write("12と20最大公約数は"+ k[1] + "です。<br><br>");
+    k[2] = koyakusu(612, 468);
+    document.write("612と468最大公約数は"+ k[2] + "です。<br><br>");
+    </script>
+  <script type="text/javascript" src="./sample2.js"></script>
+</body>
+
+</html>
