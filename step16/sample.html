@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="./sample.css">
+  <title>ウインドウの操作</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <h3>政治関連のリンク集</h3>
+  開くボタンをクリックすると、そのホームページを新しいウインドウで表示できます。<br>
+  <table border="2">
+    <tr>
+      <th>首相官邸</th>
+      <td>http://www.kantei.go.jp/</td>
+      <td><button onclick="op('http://www.kantei.go.jp/')">開く</button></td>
+    </tr>
+    <tr>
+      <th>衆議院</th>
+      <td>http://www.shugiin.go.jp/</td>
+      <td><button onclick="op('http://www.shugiin.go.jp/')">開く</button></td>
+    </tr>
+    <tr>
+      <th>衆議院TV</th>
+      <td>http://www.shugiintv.go.jp</td>
+      <td><button onclick="op('http://www.shugiintv.go.jp')">開く</button></td>
+    </tr>
+
+  </table>
+  <script type="text/javascript" src="./sample.js"></script>
+</body>
+
+</html>
