@@ -1,7 +1,7 @@
 function koyakusu() {
   let a, b, small, ax, bx;
-  a = prompt("1つ目の数値を入力してください");
-  b = prompt("2つ目の数値を入力してください");
+  a = prompt("1つ目の数値を入力してください","ここに答えを入力してください");
+  b = prompt("2つ目の数値を入力してください"<"ここに答えを入力してください");
   if (a >= b) {
     small = b;
   } else {
