@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="./sample.css">
+  <title>画像の操作を学習2_オブジェクト組み合わせ</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <h1>画像の操作2</h1>
+  <h3>デザートの写真</h3>
+  画像上へマウスを移動すると、その画像を拡大表示できる<br>
+  <br>
+  <img src="dessert01.jpg" class="waku" name="BigPhoto"><br>
+  <br><br>
+  <img src="s_dessert01.jpg" onmouseover="documnt.BigPhoto.src='dessert01.jpg'">
+  <img src="s_dessert02.jpg" onmouseover="documnt.BigPhoto.src='dessert02.jpg'">
+  <img src="s_dessert03.jpg" onmouseover="documnt.BigPhoto.src='dessert03.jpg'">
+  <img src="s_dessert04.jpg" onmouseover="documnt.BigPhoto.src='dessert04.jpg'"><br>
+  <!-- document.BigPhotoのBigphotoはname=BigphotoのBigphotoを指定している -->
+  <script type="text/javascript" src="./sample.js"></script>
+</body>
+
+</html>
