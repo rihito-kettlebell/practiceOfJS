@@ -24,5 +24,4 @@ function nowTime() {
   let JIKOKU = h + "時" + m + "分" + s + "秒";
   alert(TSUKIHI + youbi[Wd] + JIKOKU + "です");
   document.write(TSUKIHI + youbi[Wd] + JIKOKU + "です")
-
 }
