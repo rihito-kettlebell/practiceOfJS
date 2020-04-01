@@ -1,8 +1,19 @@
-let xday = new Date(2026, 5, 10);
-let now = new Date();
-// Dateオブジェクトの差をミリ秒で計算し、1日単位に変換
-let ms = xday.getTime() - now.getTime();
-let days = ms/(24 * 60 * 60 * 1000);
-// 小数点以下を切り上げ、整数にする
-days = Math.ceil(days);
-document.write(days);
+/**
+ * value ボックス内に入力されている文字
+ * defaultValue 初期値として表示される文字
+ * name オブジェクトの名前
+ * type オブジェクトのタイプ
+ */
+let total = 4800;
+let a = new Array(3);
+a[0] = 2000;
+a[1] = 400;
+a[2] = 500;
+function goukei(i){
+  if(document.forms[0].elements[i].checked == true){
+    total = total + a[i];
+  } else {
+    total = total - a[i];
+  }
+  document.forms[0].elements[3].value = total;
+}

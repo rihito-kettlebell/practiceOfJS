@@ -3,22 +3,23 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="./sample.css">
-  <title>日付、時刻の操作2</title>
+  <title>フォームの操作1</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
-  <h1>サグラダ・ファミリアの完成</h1>
-  スペインのサグラダ・ファミリアは、ガウディ没後100周年目となる<br>
+  <h1>テキストボックスとチェックボックスの活用例</h1>
   <br>
-  ガウディの命日を6月10日として計算すると、<br>
   <br>
-  サグラダ・ファミリアの完成まで、あと
+  <form>
+    <input type="checkbox" onclick="goukei(0)">うに(2000円)<br>
+    <input type="checkbox" onclick="goukei(1)">たこ(400円)<br>
+    <input type="checkbox" onclick="goukei(2)">まぐろ(500円)<br>
+    合計金額<input type="text" size="6" value="4800">円
+  </form>
   <script type="text/javascript" src="./sample.js"></script>
-  日になります。<br>
-  完成するのでしょうか？
 </body>
 
 </html>
