@@ -1,9 +1,6 @@
-function bgChange() {
-  //　ラジオボタンの数 -1
-  let imax = document.f1.iro.length - 1;
-  for (i = 0; i <= imax; i++) {
-    if (document.f1.iro[i].checked) {
-      document.bgColor = document.f1.iro[i].value;
-    }
+function goLink(){
+  let n = document.f1.links.selectedIndex;
+  if(n!=0 && n!=1 && n!=7){
+    location.href = document.f1.links.options[n].value;
   }
 }

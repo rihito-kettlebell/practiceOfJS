@@ -3,23 +3,35 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="./sample.css">
-  <title>フォームの操作2(ラジオボタン)</title>
+  <title>locatioオブジェクトの使用</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
-  <h1>背景色の変更</h1>
+  <h1>リンク集</h1>
   <br>
   <br>
   <form name="f1">
-    <input type="radio" name="iro" value="#ffffff">白
-    <input type="radio" name="iro" value="#000000">黒
-    <input type="radio" name="iro" value="#ff0000">赤
-    <input type="radio" name="iro" value="#0000ff">青
+    <select name="links" onchange="goLink()">
+      <option>移動先を選択</option>
+      <option>リンク集1=====</option>
+      <option value="">1</option>
+      <option value="">2</option>
+      <option value="">3</option>
+      <option value="">4</option>
+      <option value="">5</option>
+      <option>リンク集2=====</option>
+      <option value="">6</option>
+      <option value="">7</option>
+      <option value="">8</option>
+      <option value="">9</option>
+      <option value="">10</option>
+
+
+    </select>
   </form>
-  <button onclick="bgChange()">背景色を変更</button>
 
   <script type="text/javascript" src="./sample.js"></script>
 </body>
