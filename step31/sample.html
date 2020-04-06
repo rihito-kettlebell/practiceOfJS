@@ -11,12 +11,20 @@
 
 <body>
   <h1>ノードの学習</h1>
-  処理を下に表示<br>
   <form>
     <div>
-      <label for="name">サイト名:</label>
+      <label for="name">サイト名:</label><br />
+      <input id="name" name="name" type="text" size="30" placeholder="サイト名を入力してね" />
+    </div>
+    <div>
+      <label for="url">URL:</label><br />
+      <input id="url" name="url" type="url" size="50" placeholder="urlを入力してね" />
+    </div>
+    <div>
+      <input id="btn" type="button" value="追加" />
     </div>
   </form>
+  <div id="list"></div>
   <script type="text/javascript" src="./sample.js"></script>
 </body>
 
