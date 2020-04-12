@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(e){
+document.addEventListener("DOMContentLoaded", function(){
   let data = {
     title: "java",
     price: 2680,
