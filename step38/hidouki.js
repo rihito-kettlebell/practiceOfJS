@@ -52,15 +52,15 @@ async () => {
 // 上記は以下のようにPromise.allで書くこともできる
 async () => {
   //配列で宣言し、map関数を使う
-  const [tomato2, hamu2, retasu2] = Promise.all(
+  const [tomato, hamu, retasu] = Promise.all(
     ["/tomato2", "/hamu2", "/retasu2"].map(axios.get)
   );
 
   // 以降の処理は同じ
   const sandwitch2 = await axios.post("/sandwitch2", {
-    tomato2,
-    hamu2,
-    retasu2,
+    tomato,
+    hamu,
+    retasu,
   });
   return sandwitch2;
 };
