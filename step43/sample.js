@@ -12,7 +12,13 @@ window.addEventListener("DOMContentLoaded", function () {
         },
         true
       );
+      console.log("a")
+
+      reader.addEventListener("error",function () {
+          console.log(reader.error.message);
+        },true);
       reader.readAsText(input, "UTF-8");
+      reader.abort();
     },
     true
   );
